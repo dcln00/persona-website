@@ -21,7 +21,7 @@ window.onload = function () {
 //hide-nav
 var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
-	  var currentScrollPos = window.pageYOffset;
+	  var currentScrollPos = window.pageYOffset + 200;
 	  if (prevScrollpos > currentScrollPos) {
 		document.querySelector(".navv").style.top = "0px";
 		document.querySelector(".navm").style.top = "0px";document.querySelector(".navv").style.paddingTop = "20px";
@@ -34,5 +34,6 @@ var prevScrollpos = window.pageYOffset;
 		document.querySelector(".navm").style.top = "-100px";
 	  }
 	  prevScrollpos = currentScrollPos;
+	  console.log(prevScrollpos);
 	};
 
