@@ -1,6 +1,7 @@
 @import 'fonts';
 @import 'colors';
 @import 'mixins';
+@import 'mobile-menu'; 
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@
     font-family: $font;
     scroll-behavior: smooth;
 }
+
 
 ::selection {
     color: $alt-text-color;
@@ -19,6 +21,7 @@
 body, html {
     background-color: $bg-color;
     overflow-x: hidden;
+    width: 100%;
     outline:none !important;
 }
 
@@ -79,11 +82,14 @@ header:after {
 }
 
 nav {
+
     .navi {
-        position:absolute;
+        position:fixed;
         top:20px;
         padding-right: 77px;
         padding-left:50px;
+        transition: 0.5s;
+        transition-property: top, background-color;
 
         .navig {
             font-size: 12px;
@@ -110,6 +116,14 @@ nav {
         }
     }
 }
+
+.navi.is-scrolling {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom:20px;
+    z-index: 90;
+  }
+
 
 #purchase-cta {
     margin-bottom:107px;

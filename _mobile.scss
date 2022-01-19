@@ -44,6 +44,15 @@ $breakpoint-mobile: 576px;
         height: 100%;
         background-color: #000000;
         opacity: 0.5;
+    }    
+    nav {
+        .px-2 {
+            display:none;
+        }
+
+        .navi {
+            padding-left: 20px;
+        }
     }
 
     #purchase-cta {
@@ -226,33 +235,42 @@ $breakpoint-mobile: 576px;
        }
    }
 
-#frequently-asked-questions {
-    .container-fluid {
-        .faq {
-            h2 {
-                @include mobile-h2;
-            }
-        }
-    }
-}
-
-footer {
+    #frequently-asked-questions {
         .container-fluid {
-
-            .copyright {
-                font-size:10px;
-            }
-
-            .sm-links {
-
-                .px-4 {
-                    padding-right:0 !important;
+            .faq {
+                h2 {
+                    @include mobile-h2;
                 }
             }
         }
-   }
+    }
 
+    footer {
+            .container-fluid {
 
+                .copyright {
+                    font-size:10px;
+                }
 
+                .sm-links {
 
+                    .px-4 {
+                        padding-right:0 !important;
+                    }
+                }
+            }
+    }
+
+}
+
+@media (min-width:$breakpoint-mobile) {
+    nav {
+        .hamburger, .mobile-nav {
+            display:none;
+        }
+    }
+
+    .mobile-op {
+        display:none;
+    }
 }
