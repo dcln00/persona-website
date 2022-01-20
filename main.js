@@ -19,18 +19,18 @@ window.onload = function () {
 	})};
 
 //hide-nav
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos =  window.pageYOffset;
 	window.onscroll = function() {
-	  var currentScrollPos = window.pageYOffset + 200;
-	  if (prevScrollpos > currentScrollPos) {
-		document.querySelector(".navv").style.top = "0px";
-		document.querySelector(".navm").style.top = "0px";document.querySelector(".navv").style.paddingTop = "20px";
+	  var currentScrollPos = window.pageYOffset;
+	   if (prevScrollpos > currentScrollPos) {
+		document.querySelector(".navi").style.top = "0px";
+		document.querySelector(".navm").style.top = "0px";document.querySelector(".navi").style.paddingTop = "20px";
 		document.querySelector(".navm").style.paddingTop = "10px";
-		document.querySelector(".navv").style.paddingBottom = "20px";
+		document.querySelector(".navi").style.paddingBottom = "20px";
 		document.querySelector(".navm").style.paddingBottom = "20px";
 
 	  } else {
-		document.querySelector(".navv").style.top = "-100px";
+		document.querySelector(".navi").style.top = "-100px";
 		document.querySelector(".navm").style.top = "-100px";
 	  }
 	  prevScrollpos = currentScrollPos;

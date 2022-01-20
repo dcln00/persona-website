@@ -10,7 +10,7 @@ $breakpoint-mobile: 576px;
         @include mobile-p;
     }
 
-    header {
+    #hero-banner {
 
         background-size: cover;
         background-repeat: no-repeat;
@@ -29,13 +29,18 @@ $breakpoint-mobile: 576px;
             }
 
             p {
+                @include mobile-p;
                 text-align: center;
                 margin-bottom:140px !important;
+            }
+
+            button {
+                @include button-mobile;
             }
         }
     }
 
-    header:after {
+    #hero-banner:after {
         content: "";
         position: absolute;
         top: 0;
@@ -44,7 +49,9 @@ $breakpoint-mobile: 576px;
         height: 100%;
         background-color: #000000;
         opacity: 0.5;
-    }    
+    }
+
+    header {
     nav {
         .px-2 {
             display:none;
@@ -53,6 +60,7 @@ $breakpoint-mobile: 576px;
         .navi {
             padding-left: 20px;
         }
+    }
     }
 
     #purchase-cta {

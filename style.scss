@@ -26,7 +26,7 @@ body, html {
 }
 
 
-header {
+#hero-banner {
     position: relative;
     overflow: hidden;
     background-image: url(assets/headerhero.jpg);
@@ -70,7 +70,7 @@ header {
     }
 }
 
-header:after {
+#hero-banner:after {
     content: "";
     position: absolute;
     top: 0;
@@ -81,15 +81,20 @@ header:after {
     opacity: 0.5;
 }
 
-nav {
+header {
+    
+    nav {
 
     .navi {
         position:fixed;
-        top:20px;
+        top:0;
         padding-right: 77px;
         padding-left:50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         transition: 0.5s;
         transition-property: top, background-color;
+        z-index: 100;
 
         .navig {
             font-size: 12px;
@@ -115,14 +120,16 @@ nav {
             }
         }
     }
+    }
 }
 
 .navi.is-scrolling {
     background-color: black;
     padding-top: 20px;
     padding-bottom:20px;
-    z-index: 90;
+    z-index: 50;
   }
+
 
 
 #purchase-cta {
