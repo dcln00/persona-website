@@ -12,6 +12,7 @@ nav {
 		border:none;
 		z-index: 100;
 		transition: top 0.5s;
+		overflow: visible;
 	}
 
 	.hamburger span:nth-child(1), .hamburger span:nth-child(2), .hamburger span:nth-child(3) {
