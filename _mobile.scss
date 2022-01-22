@@ -31,7 +31,7 @@ $breakpoint-mobile: 576px;
             p {
                 @include mobile-p;
                 text-align: center;
-                margin-bottom:140px !important;
+                margin-bottom:60px !important;
             }
 
             button {
@@ -59,6 +59,10 @@ $breakpoint-mobile: 576px;
 
         .navi {
             padding-left: 20px;
+
+            .logo-text {
+                font-size:23px !important;
+            }
         }
     }
     }
@@ -80,10 +84,15 @@ $breakpoint-mobile: 576px;
 
         .percentage {
             display: block !important;
+
+            .figure-caption {
+                font-size: 11px;
+            }
         }
 
         button {
             @include button-mobile;
+            margin-top: 30px;
         }
     }
 
@@ -111,7 +120,7 @@ $breakpoint-mobile: 576px;
             .img-fluid {
                 position:absolute;
                 right:-60px;
-                top: 0;
+                top: 15px;
                 opacity:.1;
             }
 
@@ -246,15 +255,26 @@ $breakpoint-mobile: 576px;
     #frequently-asked-questions {
         .container-fluid {
             .faq {
+                .accordion-item {
+                button {
+                    font-size: 12px;
+                }
+
+                .accordion-body {
+                    font-size: 12px;
+                }
+
                 h2 {
                     @include mobile-h2;
                 }
+            }
             }
         }
     }
 
     footer {
             .container-fluid {
+                padding:0 22px;
 
                 .copyright {
                     font-size:10px;

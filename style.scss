@@ -94,7 +94,8 @@ header {
         padding-bottom: 20px;
         transition: 0.5s;
         transition-property: top, background-color;
-        z-index: 100;
+        z-index: 70;
+        //overflow-y:visible;
 
         .navig {
             font-size: 12px;
@@ -128,6 +129,7 @@ header {
     padding-top: 20px;
     padding-bottom:20px;
     z-index: 50;
+    overflow:visible;
   }
 
 
@@ -313,10 +315,14 @@ header {
 
 #frequently-asked-questions {
     .container-fluid {
-        height: 650px;
+        min-height: 650px;
 
         .faq {
             width: 700px;
+
+            .faq-heading {
+                margin-top:50px;
+            }
 
             .accordion-item {
                 border: 1px solid $main-color;
@@ -361,6 +367,7 @@ header {
 footer {
     .container-fluid {
         padding:0 50px;
+        
 
         .logo-text {
             font-family: Montserrat;
@@ -375,6 +382,7 @@ footer {
         .sm-links {
             padding-bottom:33px;
             border-bottom: 1px solid $text-color;
+            
 
             i {
                 font-size: 30px;
